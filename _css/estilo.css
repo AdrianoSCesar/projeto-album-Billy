@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); */
+@font-face {
+    font-family: 'FontLogo'; /* é o nome da fonte que será usado na referência a fontes */
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+} 
+/* Outras fontes podem ser obtidas no próprio Google (google.com/fonts), que é também 
+um repositório de fontes.
+Clique sobre icone "pop-out" para ver detalhes sobre uma fonte
+No campo Preview text você pode digitar o seu titulo ou texto para ver
+como ele fica na fonte escolhida.
+No campo superior direito há um campo para pesquisa da fonte desejada
+Para importar esse fonte, clique sobre o botão + dentro de um quadrado (quick use)
+e abaixo há a opção "To embed a font, copy the code into the <head> of your html", menu import, copiar o texto e coloca-lo
+no arquivo CSS.
+Para referenciar esse fonte no seu arquivo CSS, no site Google da fonte, vá
+para "CSS rules to specify families" e copie o texto do campo, e cole
+no arquivo CSS, no elemento que deseja formatar.
+
+*/
+
+body {
+    /* background-image: url("fundo.jpg"); */
+    background-color: #b0dab2;
+    color: rgba(0,0,0,1);
+    font-family: Arial, sans-serif;
+}        
+p {
+    text-align: justify; 
+    text-indent: 50px;
+}
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline ;
+}
+/* formatação de imagens com legenda */
+figure.foto-legenda {
+    position: relative; /* relativo em relação à posição no código HTML */
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black /* sombra horiz vertic espalhamento cor */
+
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+
+}
+figure.foto-legenda figcaption {
+    opacity: 0; /* faz a legenda ficar oculta */
+    position: absolute; /* absoluto em relação ao container foto-legenda */
+    top: 0px;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* faz o conteúdo do figcaption ficar dentro da borda */
+ 
+
+}
+figure.foto-legenda:hover figcaption {
+    opacity: 1; /* a legenda só será exibida qdo passar o mouse por cima da foto */
+    transition: opacity 1s; /* opacidade mudará em 1 seg */
+}
+/* formatação do menu */
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative; /* a ul vai passar por cima dos documentos */
+/*     posição absoluta fica livre para flutuar pelo site, relativa fica presa
+    podendo flutuar apenas dentro do seu container */
+    top: -120px; /* ficou negativa porque o navegador traz uma margem padrão */
+    left: 200px
+}
+nav#menu li {
+    display: inline-block; /* faz com o que os blocos li sejam exibidos numa mesma linha */
+    background-color: #dddddd ;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu {
+    display: block; /* navegador menu será exibido como um bloco. Um bloco pode flutuar pela tela */
+}
+nav#menu h1 {
+    display: none; /* esconde o texto menu principal, mas ele terá função importante para os navegadores de busca */
+}
+/* Efeitos visuais */
+nav#menu li:hover{
+    background-color: #606060;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+section#corpo {
+    display: block;
+    width: 800px;
+    float: left; /* faz a seção flutuar no lado esquerdo */
+    border-right: 1px solid #606060 ;
+    padding-right: 20px;
+}
+article#noticia-principal h2{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+header#cabecalho-artigo h1{
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+    color: #009A00 #0000B5 #000000 #FFFFFF;
+}
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px; 
+    /* elimina o espaço entre as bordas da tabela e das células */
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px; /* cria espaço interno nas células */   
+    text-align: center; 
+}
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaspec td.cd {
+    background-color: #cecece;  
+    text-align: left;
+}
+table#tabelaspec caption {
+    color: #888888; 
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right; 
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right; /* faz a seção flutuar no lado direito */
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+aside#lateral h1 {
+    font-family: 'fontLogo', sans-serif;
+    font-size: 20pt ;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer#rodape {
+    clear:both; 
+    /* isso limpa a configuração dos dois floats. 
+    Faz com que o conteúdo seja mostrado fora dos lados da 
+    divisão de section e aside; */
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+div#interface {
+    width: 900px;
+    /*Todo o site fica dentro dessa largura, exceto o menu que
+    está com posição absoluta e aí fica fora do container da div */
+    background-color: #ffffff; 
+    margin: -20px auto 0px auto; /* isso centraliza a interface na lateral */   
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px 10px 10px 10px;/*  se todos os parametros forem iguais, basta uma medida */
+    }
+header#cabecalho img#icone {
+    position: relative;
+    left: 780px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    margin-top: 60px;
+    height: 150px;
+    /* background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; */
+    /* colocação de uma logomarca como background. Observe que os dois pontos
+    do caminho do arquivo sair de css e  subir um diretório  */
+    /* como a imagem do logo é pequena, o html replica a imagem por todo o objeto de 
+    cabecalho. Para não repetir, coloque o parametro no-repeat.Depois 
+    acrescente o deslocamento lateral (0px) e o deslocamento vertical (80px).
+    A imagem como background não terá a opção de "salvar imagem". Para isso, teria que 
+    ser objeto img */
+}
+header#cabecalho h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888;
+    padding: 0px;
+    margin-top: 0px;
+}

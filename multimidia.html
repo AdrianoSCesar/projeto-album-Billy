@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Billy</title>
+    <link rel="stylesheet" href="./_css/estilo.css" />
+    <link rel="stylesheet" href="./_css/media.css" />
+
+</head>
+<!-- <script src="./_javascript/inicio.js"></script> -->
+<script language="javascript" src="./_javascript/funcoes.js"></script>
+<!-- esse parâmetro language é opcional para javascript, já que ela é a mais usada com <html></html> -->
+
+<body>
+
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Álbum de Billy</h1>
+                <h2>Momentos mágicos e inesquecíveis!</h2>
+            </hgroup>
+            <img id="icone" src="./_imagens/fotos.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <li onmouseover="mudaFoto('./_imagens/superman.jpg')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./inicio.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('./_imagens/fotos.png')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./fotos.html"><a
+                                href="./fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('./_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./multimidia.html"><a
+                                href="./multimidia.html">Vídeos</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- ---------Acima é parte comum a todos os arquivos do menu trocando apenas a imágem do onmouseout--------->
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Home > Vídeos</h3>
+                        <h1>Galeria de vídeos de Billy</h1>
+                        <h2>por Adriano Cesar</h2>
+                        <h3 class="direita">Atualizado em 5 de Fevereiro de 2022</h3>
+                    </hgroup>
+                </header>
+
+                <div id="tv-radio">
+
+                    <video id="filme" controls="controls" poster="./_imagens/2018-bom-no-jogo_Moment.jpg">
+                        <!-- o poster mostrará uma foto de fundo enquanto não se roda vídeo -->
+                        <source src="./_media/2018-bom-no-jogo.mp4" type="video/mp4" />
+                        <source src="./_media/2018-bom-no-jogo.webm" type="video/webm" />
+                        <source src="./_media/2018-bom-no-jogo.ogv" type="video/ogg" />
+                        Desculpe, mas não foi possível carregar o video
+                    </video>
+                    <video id="filme2" controls="controls" poster="./_imagens/2018-depois-do-passeio_Moment.jpg">
+                        <!-- o poster mostrará uma foto de fundo enquanto não se roda vídeo -->
+                        <source src="./_media/2018-depois-do-passeio.mp4" type="video/mp4" />
+                        <source src="./_media/2018-depois-do-passeio.webm" type="video/webm" />
+                        <source src="./_media/2018-depois-do-passeio.ogv" type="video/ogg" />
+                        Desculpe, mas não foi possível carregar o video
+                    </video>
+                </div><br>
+                <iframe width="400" height="300" src="./_media/2017-a-praia.mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <iframe width="400" height="300" src="./_media/2017-mais-praia.mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+
+
+            </article>
+        </section>
+        <!-- ---------Abixo é parte comum a todos os arquivos do menu ---------------------------->
+        <footer id="rodape">
+            <p>Copyright 2022 - by Adriano Cesar<br>
+
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

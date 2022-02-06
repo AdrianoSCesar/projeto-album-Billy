@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Billy</title>
+    <link rel="stylesheet" href="./_css/estilo.css" />
+    <link rel="stylesheet" href="./_css/fotos.css" />
+
+</head>
+<!-- <script src="./_javascript/inicio.js"></script> -->
+<script language="javascript" src="./_javascript/funcoes.js"></script>
+<!-- esse parâmetro language é opcional para javascript, já que ela é a mais usada com <html></html> -->
+
+<body>
+
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Álbum de Billy</h1>
+                <h2>Momentos mágicos e inesquecíveis!</h2>
+            </hgroup>
+            <img id="icone" src="./_imagens/superman.jpg">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <li onmouseover="mudaFoto('./_imagens/superman.jpg')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./inicio.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('./_imagens/fotos.png')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./fotos.html"><a
+                                href="./fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('./_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('./_imagens/superman.jpg')"><a href="./multimidia.html"><a
+                                href="./multimidia.html">Vídeos</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- -----------Acima é parte comum a todos os arquivos do menu trocando apenas a imagem do onmouseout--------- -->
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Home > Fotos</h3>
+                        <h1>Galeria de Imagens de Billy</h1>
+                        <h2>por Adriano Cesar</h2>
+                        <h3 class="direita">Atualizado em 5 de Fevereiro de 2022</h3>
+                    </hgroup>
+                </header>
+
+
+
+                <P>Veja em nossa galeria de fotos várias belas imagens de Billy, que mostram alguns dos principais momentos de sua vida. Basta <strong>passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve
+                    descrição</strong>.</P>
+
+                <ul id="album-fotos">
+                    <li id="foto01"><span>2011 - Minha nova família</span></li>
+                    <li id="foto02"><span>2012 - Dormir era o meu negócio</span></li>
+                    <li id="foto03"><span>2013 - Uma arte de vez em quando</span></li>
+                    <li id="foto04"><span>2014 - Até gostava de um bom banho</span></li>
+                    <li id="foto05"><span>2015 - Passeio com meu melhor amigo</span></li>
+                    <li id="foto06"><span>2016 - Aaahhh! A praia</span></li>
+                    <li id="foto07"><span>2017 - Passeio de carro</span></li>
+                    <li id="foto08"><span>2018 - Pronto para a grande festa</span></li>
+                    <li id="foto09"><span>2019 - Eita! Como fui feliz!</span></li>
+                </ul>
+            </article>
+        </section>
+        <!-- -----------Abixo é parte comum a todos os arquivos do menu ---------------------------- -->
+        <footer id="rodape">
+            <p>Copyright 2022 - by Adriano Cesar<br>
+
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

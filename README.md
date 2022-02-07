@@ -1,4 +1,3 @@
-# projeto-glass-html5
- Curso HTML5-cursoemvideo
+# projeto-album-Billy
 
-Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
+ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!

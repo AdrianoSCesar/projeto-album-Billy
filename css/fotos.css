@@ -44,7 +44,6 @@ ul#album-fotos li#foto01 {
     background-color: #ffffff;
 }
 ul#album-fotos li#foto01:hover {
-    background: url("../imagens/galeria-01.jpg") no-repeat; 
     background-position: 0px 0px; /* imagem volta para o canto superior esquerdo */
     background-size: 200px 200px;/*  ao passar o mouse, deixa a foto com tamanho menor igual ao do album-fotos */
 

@@ -34,18 +34,22 @@ ul#album-fotos li span {
 ul#album-fotos li:hover span {
     opacity: 1; /* sob o mouse, mostra o texto de span */
 }
+    /* Abaixo: esse no-repeat evita repetição da foto no espaço caso ela seja pequena */
+
+    /* background-position: 50% 50% faz com que apareça o meio da imagem no espaço da foto em vez do canto superior esquerdo. O zoom da imagem vai partir do meio da foto  */
+    /* background-size: 400px 400px põe no tamanho original da imagem de fundo */
+
+
 ul#album-fotos li#foto01 {
     background: url("../imagens/galeria-01.jpg") no-repeat; 
     /* esse no-repeat evita repetição da foto no espaço caso ela seja pequena */
     background-position: 50% 50%;
-    /* faz com que apareça o meio da imagem no espaço da foto em vez do canto superior esquerdo. O zoom da imagem vai partir do meio da foto  */
     background-size: 400px 400px; 
-    /* põe no tamanho original da imagem de fundo */
     background-color: #ffffff;
 }
 ul#album-fotos li#foto01:hover {
     background-position: 0px 0px; /* imagem volta para o canto superior esquerdo */
-    background-size: 200px 200px;/*  ao passar o mouse, deixa a foto com tamanho menor igual ao do album-fotos */
+    background-size: 200px 200px;
 
 }
 ul#album-fotos li#foto02 {

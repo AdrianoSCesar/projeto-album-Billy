@@ -41,7 +41,7 @@ ul#album-fotos li:hover span {
 
 
 ul#album-fotos li#foto01 {
-    background: url("../imagens/galeria-01.jpg") no-repeat; 
+    background: url("../imagens/galeria-02.JPG") no-repeat; 
     /* esse no-repeat evita repetição da foto no espaço caso ela seja pequena */
     background-position: 50% 50%;
     background-size: 400px 400px; 

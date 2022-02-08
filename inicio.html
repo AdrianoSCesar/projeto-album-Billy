@@ -5,21 +5,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso</title>
-    <link rel="stylesheet" href="./_css/estilo.css" />
+    <title>Álbum de Billy</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-<!-- <script src="./_javascript/inicio.js"></script> -->
-<script language="javascript" src="./_javascript/funcoes.js"></script>
+<!-- <script src="javascript/inicio.js"></script> -->
+<script language="javascript" src="javascript/funcoes.js"></script>
 <!-- esse parâmetro language é opcional para javascript, já que ela é a mais usada com <html></html> -->
 
-    <body>
-        <!-- <div>
-            <h1>Você está acessando um álbum particular</h1><br>
-            <p> Por favor, digite a senha: <input id="inicio" type="text" >
-            <input type="button" value="Verificar" onclick="verificar()"></p>
-        </div>
-        <div id="res">
-            
-        </div> -->
-    </body>
+<body>
+
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Álbum de Billy</h1>
+                <h2>Momentos mágicos e inesquecíveis!</h2>
+            </hgroup>
+            <img id="icone" src="imagens/superman.jpg">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="square">
+                    <li onmouseover="mudaFoto('imagens/superman.jpg')"
+                        onmouseout="mudaFoto('imagens/superman.jpg')"><a href="inicio.html">Home</a>
+                    </li>
+                    <li onmouseover="mudaFoto('imagens/fotos.png')"
+                        onmouseout="mudaFoto('imagens/superman.jpg')"><a href="fotos.html"><a
+                                href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/multimidia.png')"
+                        onmouseout="mudaFoto('imagens/superman.jpg')"><a href="multimidia.html"><a
+                                href="multimidia.html">Vídeos</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- -----------Acima é parte comum a todos os arquivos do menu trocando apenas a imagem do onmouseout--------- -->
+
+        <section id="corpo">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Home</h3>
+                        <h1>Como foi a vida de Billy ?</h1>
+                        <h2>por Adriano Cesar</h2>
+                        <h3 class="direita">Atualizado em 5 de Fevereiro de 2022</h3>
+                    </hgroup>
+                </header>
+                <p><span style="font-weight: 900;">Billy</span> nasceu na cidade de &shy;I&shy;ta&shy;bu&shy;na/BA em 2/9/2011. 
+                Ele foi morar na cidade <em>Aracaju/SE</em>  com sua nova família, a Família ASAS, em 23/10/2011, e ali recebeu todo o amor, carinho, cuidados e adestramento não profissional que um cão podia receber. </p>
+                <p>Ele foi o primeiro e, até então, o único pet de maior porte da Família ASAS.</p>
+                <p>Billy partiu para outro mundo em 2/5/2019, deixando toda a sua família e amigos com muita saudade!</p>
+                <figure class="foto-legenda">
+                    <img src="imagens/na-varanda.jpg" alt="" />
+                    <figcaption>
+                        <h3>Billy,</h3>
+                        <p>Jamais te esqueceremos!</p>
+
+                    </figcaption>
+                </figure>
+
+                <h2>Características principais</h2>
+                <table id="tabelaspec">
+                    <caption>  <span>Set/2018</span></caption>
+
+                    <tr>
+                        <td class="ce">Peso</td>
+                        <td class="cd">33 Kg</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="ce">Comidas favoritas</td>
+                        <td class="cd">Carne crua</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">Carne assada</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="ce">Passeios favoritos</td>
+                        <td class="cd">Praia</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">Parques</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">Pelagem</td>
+                        <td class="cd">Bege clarinho</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">Raça</td>
+                        <td class="cd">Golden Retriever</td>
+                    </tr>
+                </table>
+                <h2>Dia a dia
+                </h2>
+                <p>Billy passava a maior parte do dia dormindo, mas à noite ficava esperto, afinal, gostava de proteger a casa de sua família. Se pintasse um passeio de carro, não perdia a chance. Comia duas vezes ao dia e seu banheiro era o gramado da casa. Era obediente aos seus donos, mas ficava impaciente ao entardecer: claro! Era a hora do passeio!</p>
+                <h2>Sonho</h2>
+                <p>Namorar certinho com a vizinha Mel, da raça Labrador.</p>
+
+
+
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright 2022 - by Adriano Cesar<br>
+
+            </p>
+        </footer>
+
+    </div>
+</body>
+
 </html>

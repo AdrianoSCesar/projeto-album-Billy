@@ -9,12 +9,12 @@ ul#album-fotos {
     list-style: none;
 }
 ul#album-fotos li {
-    float: right; /* faz os itens da lista ficarem um ao lado do outro, não mais um acima do outro */
+    float: left; /* faz os itens da lista ficarem um ao lado do outro, não mais um acima do outro */
     width: 200px;
     height: 200px;
     margin: 10px;
     border: 5px solid #ffffff;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     -webkit-transition: all 0.4s ease-in; /* ease-in é forma do efeito */
 }
@@ -41,7 +41,7 @@ ul#album-fotos li:hover span {
     /* background-position: 0px 0px;  imagem volta para o canto superior esquerdo */
 
 ul#album-fotos li#foto01 {
-    background: url("../imagens/galeria-02.JPG") no-repeat; 
+    background: url("../imagens/galeria-01.JPG") no-repeat; 
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: #ffffff;

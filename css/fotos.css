@@ -38,20 +38,20 @@ ul#album-fotos li:hover span {
 
     /* background-position: 50% 50% faz com que apareça o meio da imagem no espaço da foto em vez do canto superior esquerdo. O zoom da imagem vai partir do meio da foto  */
     /* background-size: 400px 400px põe no tamanho original da imagem de fundo */
-
-
-/* ul#album-fotos li#foto01 {
+    /* background-position: 0px 0px;  imagem volta para o canto superior esquerdo */
+/* 
+ul#album-fotos li#foto01 {
     background: url("../imagens/galeria-02.JPG") no-repeat; 
-    /* esse no-repeat evita repetição da foto no espaço caso ela seja pequena */
     background-position: 50% 50%;
-    background-size: 400px 400px; 
+    background-size: 400px 400px;
     background-color: #ffffff;
-} */
+}
 ul#album-fotos li#foto01:hover {
-    background-position: 0px 0px; /* imagem volta para o canto superior esquerdo */
+    background-position: 0px 0px;
     background-size: 200px 200px;
 
-}
+} */
+
 ul#album-fotos li#foto02 {
     background: url("../imagens/galeria-02.jpg") no-repeat; 
     /* esse no-repeat evita repetição da foto no espaço caso ela seja pequena */

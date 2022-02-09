@@ -9,12 +9,12 @@ ul#album-fotos {
     list-style: none;
 }
 ul#album-fotos li {
-    float: left; /* faz os itens da lista ficarem um ao lado do outro, não mais um acima do outro */
+    float: left; /* faz os itens da lista ficarem um ao lado do outro, não mais um acima do outro, da esq p/ dir*/
     width: 200px;
     height: 200px;
     margin: 10px;
     border: 5px solid #ffffff;
-    /* background-color: #ffffff; */
+    /* background-color: #ffffff; */ /* esse comando não permitia mostrar a foto-01 */
     box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     -webkit-transition: all 0.4s ease-in; /* ease-in é forma do efeito */
 }
